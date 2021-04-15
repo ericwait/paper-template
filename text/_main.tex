@@ -1,0 +1,43 @@
+\documentclass[12pt,onecolumn]{preprint}
+
+\usepackage{hyperref}
+\usepackage{booktabs}
+% \usepackage[inline]{enumitem}
+
+% Comment out these two if you want standard paragraph indentation
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\graphicspath{{../figures/}}
+
+\begin{document}
+    This template should work on all platforms.
+
+    I find it convenient to write each sentence on a separate line.
+    This has two major benefits:
+        i) you can see how long your sentences are getting,
+        ii) makes referencing to text much easier when editing with a collaborator, and
+        iii) the diffs will be much easier to handle when using git.
+
+    \emph{Enjoy!}
+
+    \section{Figures}
+        \begin{table}[!h]
+            \centering
+            \label{tab:program_list}
+            \adjustboxset{width=.01\textwidth,valign=c, margin=2pt 1pt 1pt 1pt}
+            \caption{Icons: \protect\adjustimage{}{windows.png}=Windows OS, \protect\adjustimage{}{apple.png}=Apple OS, \protect\adjustimage{}{linux.png}=Linux OS}
+            \adjustboxset{width=.02\textwidth,valign=c, margin=-4pt 1pt -4pt 1pt}
+            \begin{tabular}{lccc}
+            \toprule
+                Software Tool & \multicolumn{3}{c}{Platform}\\
+            \midrule
+        Test line & \adjustimage{}{windows.png} & \adjustimage{}{apple.png}  & \adjustimage{}{linux.png}\\
+            \end{tabular}
+        \end{table}
+
+    Cool paper I wrote \cite{wait2020}.
+
+    \bibliographystyle{ieeetr}
+	\bibliography{main.bib}
+\end{document}
